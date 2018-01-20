@@ -39,11 +39,9 @@ section {
 .wrrap {
   width: 100%; }
 
-#top {
+#top,
+#btn-connect {
   position: absolute;
-  bottom: 7%;
-  right: 10%;
-  font-size: 45px;
   cursor: pointer;
   color: #fff;
   width: 70px;
@@ -51,6 +49,17 @@ section {
   text-align: center;
   border-radius: 50%;
   background-color: #6585ff; }
+
+#top {
+  bottom: 7%;
+  right: 10%;
+  font-size: 45px; }
+
+#btn-connect {
+  top: 8%;
+  left: 0;
+  padding: 15px 0;
+  font-family: "Roboto", sans-serif; }
 
 header {
   display: block; }
@@ -196,7 +205,7 @@ header {
 .choosevocation {
   background-color: rgba(0, 0, 0, 0.5);
   margin: 20px auto;
-  width: 90%;
+  width: 95%;
   padding: 4px 0 0; }
   .choosevocation .form-group {
     float: left;
@@ -554,57 +563,68 @@ nav {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 25px;
     padding: 0; }
-  .ourTours .cat-pict {
-    position: relative;
-    overflow: hidden; }
-    .ourTours .cat-pict p {
-      background-color: #fff;
-      padding: 10px;
-      margin: 0;
-      text-align: center;
-      font-family: "abosanova", sans-serif;
-      font-weight: bold;
-      font-size: 12px;
-      border-top: 3px solid #6585ff; }
-    .ourTours .cat-pict:nth-child(1) {
-      grid-column: 1/3; }
-    .ourTours .cat-pict:nth-child(10) {
-      grid-column: 3/5; }
-  .ourTours .descr {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url("images/baketsfor-tur.png") rgba(0, 0, 0, 0.5) no-repeat;
-    background-position: center center;
-    color: #fff;
-    opacity: 0;
-    transform: translateY(-30px);
-    -webkit-transition: all .25s;
-    -o-transition: all .25s;
-    transition: all .25s;
-    overflow: hidden; }
-    .ourTours .descr p {
-      background-color: #6585ff;
-      display: block;
-      position: relative; }
-      .ourTours .descr p:after {
-        content: '';
-        position: absolute;
-        border: 15px solid transparent;
-        border-top: 15px solid #6585ff;
-        left: 50%;
-        margin-left: -12px;
-        bottom: -30px;
-        width: 0; }
-  .ourTours .cat-pict:hover .descr {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0); }
+
+.ourTours .cat-container .cat-pict,
+.jc-items .cat-pict {
+  position: relative;
+  overflow: hidden; }
+  .ourTours .cat-container .cat-pict p,
+  .jc-items .cat-pict p {
+    background-color: #fff;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    font-family: "abosanova", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    border-top: 3px solid #6585ff; }
+  .ourTours .cat-container .cat-pict:nth-child(1),
+  .jc-items .cat-pict:nth-child(1) {
+    grid-column: 1/3; }
+  .ourTours .cat-container .cat-pict:nth-child(10),
+  .jc-items .cat-pict:nth-child(10) {
+    grid-column: 3/5; }
+
+.ourTours .cat-container .descr,
+.jc-items .descr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("images/baketsfor-tur.png") rgba(0, 0, 0, 0.5) no-repeat;
+  background-position: center center;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(-30px);
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+  overflow: hidden; }
+  .ourTours .cat-container .descr p,
+  .jc-items .descr p {
+    background-color: #6585ff;
+    display: block;
+    position: relative; }
+    .ourTours .cat-container .descr p:after,
+    .jc-items .descr p:after {
+      content: '';
+      position: absolute;
+      border: 15px solid transparent;
+      border-top: 15px solid #6585ff;
+      left: 50%;
+      margin-left: -12px;
+      bottom: -30px;
+      width: 0; }
+
+.ourTours .cat-container .cat-pict:hover .descr,
+.jc-items .cat-pict:hover .descr {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0); }
 
 .mainNews {
   width: 100%;
@@ -913,6 +933,67 @@ aside {
     right: 0;
     background-position: top right; }
 
+.related-posts .imgHold {
+  position: relative; }
+  .related-posts .imgHold .capt {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); }
+    .related-posts .imgHold .capt p {
+      color: #fff;
+      float: left;
+      font-size: 14px;
+      margin: 2px 17px;
+      line-height: 40px;
+      display: block; }
+      .related-posts .imgHold .capt p.capt-price {
+        float: right; }
+        .related-posts .imgHold .capt p.capt-price a {
+          border-radius: 5px;
+          border: 1px solid #fa7b0a;
+          padding: 5px 15px;
+          font-weight: bold;
+          margin-right: 5px;
+          color: #fa7b0a; }
+          .related-posts .imgHold .capt p.capt-price a:hover {
+            text-decoration: none; }
+
+.related-posts .decr-item {
+  position: relative;
+  overflow: hidden; }
+  .related-posts .decr-item p {
+    padding: 15px 0 8px 15px; }
+  .related-posts .decr-item .descr-link {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translateY(30px);
+    -webkit-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+    background-color: #fa7b0a; }
+    .related-posts .decr-item .descr-link a {
+      margin: 20px;
+      padding: 3px 20px;
+      float: left;
+      display: block;
+      text-align: center;
+      border: 1px solid #fff;
+      border-radius: 3px;
+      color: #fff; }
+      .related-posts .decr-item .descr-link a:last-child {
+        float: right; }
+      .related-posts .decr-item .descr-link a:hover {
+        text-decoration: none; }
+  .related-posts .decr-item .decr-item:hover .descr-link {
+    opacity: 1;
+    transform: translateY(0); }
+
 .articles {
   margin: 30px 0; }
   .articles h2 {
@@ -1143,6 +1224,48 @@ aside .sidebar_propose .owl-nav div {
     right: 0;
     background-position: top right; }
 
+aside .sidebartours_propose h2 {
+  color: #6585ff; }
+
+aside .prod_slider {
+  position: relative;
+  margin: 20px 0; }
+  aside .prod_slider #slideimg {
+    overflow: hidden;
+    -webkit-transition: all ease 1s;
+    transition: all ease 1s;
+    top: 0; }
+    aside .prod_slider #slideimg .jc-items {
+      position: relative;
+      height: 700px;
+      z-index: 1; }
+      aside .prod_slider #slideimg .jc-items .cat-pict {
+        overflow: visible; }
+      aside .prod_slider #slideimg .jc-items p {
+        padding: 15px 0 0;
+        line-height: 15px; }
+      aside .prod_slider #slideimg .jc-items .descr p {
+        padding: 10px; }
+      aside .prod_slider #slideimg .jc-items img {
+        max-width: 100%;
+        display: block;
+        height: auto;
+        margin: 15px auto; }
+  aside .prod_slider #block_arrows {
+    width: 100%;
+    z-index: 5; }
+    aside .prod_slider #block_arrows .prev {
+      position: absolute;
+      top: -4%;
+      right: 2%; }
+    aside .prod_slider #block_arrows .next {
+      position: absolute;
+      bottom: -4%;
+      right: 2%; }
+  aside .prod_slider i {
+    font-size: 20px;
+    color: #6585ff; }
+
 footer {
   width: 100%;
   position: relative; }
@@ -1291,7 +1414,13 @@ footer {
       clear: both;
       visibility: hidden; }
   .subfooter .list-link {
-    width: 100%; } }
+    width: 100%; }
+  aside .prod_slider #slideimg .jc-items {
+    width: 2000em;
+    height: auto; }
+    aside .prod_slider #slideimg .jc-items .cat-pict {
+      float: left;
+      margin-right: 15px; } }
 
 @media only screen and (max-width: 768px) {
   .top-header {

@@ -262,6 +262,33 @@ jQuery(document).ready(function($){
         navText: ""
 
     });
+// Relatetd tours
+    $("#relpostart").owlCarousel({
+        items: 3,
+        nav: true,
+        margin: 20,
+        navText: "",
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items: 1,
+                nav: true,
+                autoplayTimeout: 2000
+            },
+            600:{
+                items: 2,
+                nav: true
+            },
+
+            1000:{
+                items: 3,
+                nav: true,
+                loop: true
+
+            }
+        }
+
+    });
 // Card Slider
     $("#cardslider").owlCarousel({
         nav: true,
@@ -300,6 +327,26 @@ jQuery(document).ready(function($){
     $(".close").click(function () {
         $(".top-search").fadeOut(300);
     });
+
+// vertical carousel on sidebar
+
+    $('#slideimg').jcarousel( {
+        // vertical: true,
+        wrap: 'circular',
+        animation: 'slow',
+    }).jcarouselAutoscroll({
+        interval: 3000,
+        target: '+=1',
+        autostart: true
+    });
+    $('.prev').jcarouselControl({
+        target: '-=1'
+    });
+    $('.next').jcarouselControl({
+        target: '+=1'
+    });
+
+
 });// end ready
 $(document).on('click', '.yamm .dropdown-menu', function(e) {
     e.stopPropagation()
