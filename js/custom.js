@@ -70,17 +70,16 @@ jQuery(document).ready(function($){
     });
 // headerBigSlider
     var $item = $('.carousel .item');
-    var $wHeight = $(window).height();
+    var $wHeight = $("#topSlider").height();
+    var $wWidth = $(window).width();
     $item.eq(0).addClass('active');
     $item.height($wHeight);
     $item.addClass('full-screen');
 
     $('.carousel img').each(function() {
         var $src = $(this).attr('src');
-        var $color = $(this).attr('data-color');
         $(this).parent().css({
             'background-image' : 'url(' + $src + ')',
-            'background-color' : $color
         });
         $(this).remove();
     });
@@ -346,7 +345,13 @@ jQuery(document).ready(function($){
     $(".close").click(function () {
         $(".top-search").fadeOut(300);
     });
-
+// form button
+    $("#formbtn").click(function(){
+        $(".choosevocation").fadeIn(300);
+    });
+    $(".close").click(function () {
+        $(".choosevocation").fadeOut(300);
+    });
 // vertical carousel on sidebar
 
     $('#slideimg').jcarousel( {
@@ -365,7 +370,12 @@ jQuery(document).ready(function($){
         target: '+=1'
     });
 
-
+// lazyLoad
+    $(".art-item").slice(0,6).show();
+    $("#button-more").click(function(e){
+        e.preventDefault();
+        $('.art-item:hidden').slice(0,6).slideDown();
+    });
 });// end ready
 $(document).on('click', '.yamm .dropdown-menu', function(e) {
     e.stopPropagation()

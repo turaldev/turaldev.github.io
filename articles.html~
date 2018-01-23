@@ -83,7 +83,7 @@
                       <nav class="clearfix">
                         <div class="mobile-mnu hidden-md hidden-lg"><a class="toggle-mnu hidden-lg" href="#"><span></span></a></div>
                                 <ul class="sf-menu">
-                                  <li><a href="index.html">Главная</a></li>
+                                  <li><a href="#">Главная</a></li>
                                   <li><a class="active" href="#">Подбор туров</a>
                                     <div class="sf-mega">
                                       <ul class="mega-sub">
@@ -93,16 +93,16 @@
                                       </ul>
                                     </div>
                                   </li>
-                                  <li><a href="articles.html">Статьи</a>
+                                  <li><a href="#">Агенствам</a>
                                     <div class="sf-mega">
                                       <ul class="mega-sub">
-                                        <li><a href="article.html">Статья</a></li>
+                                        <li><a href="#">menuSubItem1</a></li>
                                         <li><a href="#">menuSubItem2</a></li>
                                         <li><a href="#">menuSubItem3</a></li>
                                       </ul>
                                     </div>
                                   </li>
-                                  <li><a href="cardtur.html">Карта тура</a></li>
+                                  <li><a href="#">Не нашли, что искали</a></li>
                                   <li><a href="#">Контакти</a></li>
                                 </ul>
                       </nav>

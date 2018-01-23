@@ -19,7 +19,7 @@
     <link href="style.css" rel="stylesheet"><!-- [if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
-    <title>Статьи
+    <title>Карта тура
     </title>
   </head>
   <body>
@@ -83,7 +83,7 @@
                       <nav class="clearfix">
                         <div class="mobile-mnu hidden-md hidden-lg"><a class="toggle-mnu hidden-lg" href="#"><span></span></a></div>
                                 <ul class="sf-menu">
-                                  <li><a href="index.html">Главная</a></li>
+                                  <li><a href="#">Главная</a></li>
                                   <li><a class="active" href="#">Подбор туров</a>
                                     <div class="sf-mega">
                                       <ul class="mega-sub">
@@ -93,16 +93,16 @@
                                       </ul>
                                     </div>
                                   </li>
-                                  <li><a href="articles.html">Статьи</a>
+                                  <li><a href="#">Агенствам</a>
                                     <div class="sf-mega">
                                       <ul class="mega-sub">
-                                        <li><a href="article.html">Статья</a></li>
+                                        <li><a href="#">menuSubItem1</a></li>
                                         <li><a href="#">menuSubItem2</a></li>
                                         <li><a href="#">menuSubItem3</a></li>
                                       </ul>
                                     </div>
                                   </li>
-                                  <li><a href="cardtur.html">Карта тура</a></li>
+                                  <li><a href="#">Не нашли, что искали</a></li>
                                   <li><a href="#">Контакти</a></li>
                                 </ul>
                       </nav>
@@ -178,140 +178,131 @@
         <section class="articles clearfix">
           <div class="container">
             <div class="row">
-              <h2>Статьи</h2>
-              <div class="col-md-4">
-                <div class="art-item">
-                  <div class="holder"><img src="images/art1.jpg">
-                    <div class="captholder">
-                      <p>Золотая неделя в Праге</p>
-                    </div>
-                  </div>
-                  <div class="decript-item">
-                    <p>Lorem ipsum dolor sit amet, accumsan ponderum mandamus nam an, quot omittam consetetur ea has. Nam et maiorum epicurei, nec illumlabo....</p>
-                    <div class="decript-link clearfix"><a href="#">Читать далее</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="art-item">
-                  <div class="holder"><img src="images/art2.jpg">
-                    <div class="captholder">
-                      <p>Словенский уикенд</p>
-                    </div>
-                  </div>
-                  <div class="decript-item">
-                    <p>Lorem ipsum dolor sit amet, accumsan ponderum mandamus nam an, quot omittam consetetur ea has. Nam et maiorum epicurei, nec illumlabo....</p>
-                    <div class="decript-link clearfix"><a href="#">Читать далее</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="art-item">
-                  <div class="holder"><img src="images/art3.jpg">
-                    <div class="captholder">
-                      <p>Сказочный уикенд</p>
-                    </div>
-                  </div>
-                  <div class="decript-item">
-                    <p>Lorem ipsum dolor sit amet, accumsan ponderum mandamus nam an, quot omittam consetetur ea has. Nam et maiorum epicurei, nec illumlabo....</p>
-                    <div class="decript-link clearfix"><a href="#">Читать далее</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="art-item">
-                  <div class="holder"><img src="images/art1.jpg">
-                    <div class="captholder">
-                      <p>Золотая неделя в Праге</p>
-                    </div>
-                  </div>
-                  <div class="decript-item">
-                    <p>Lorem ipsum dolor sit amet, accumsan ponderum mandamus nam an, quot omittam consetetur ea has. Nam et maiorum epicurei, nec illumlabo....</p>
-                    <div class="decript-link clearfix"><a href="#">Читать далее</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="art-item">
-                  <div class="holder"><img src="images/art2.jpg">
-                    <div class="captholder">
-                      <p>Словенский уикенд</p>
-                    </div>
-                  </div>
-                  <div class="decript-item">
-                    <p>Lorem ipsum dolor sit amet, accumsan ponderum mandamus nam an, quot omittam consetetur ea has. Nam et maiorum epicurei, nec illumlabo....</p>
-                    <div class="decript-link clearfix"><a href="#">Читать далее</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="art-item">
-                  <div class="holder"><img src="images/art3.jpg">
-                    <div class="captholder">
-                      <p>Сказочный уикенд</p>
-                    </div>
-                  </div>
-                  <div class="decript-item">
-                    <p>Lorem ipsum dolor sit amet, accumsan ponderum mandamus nam an, quot omittam consetetur ea has. Nam et maiorum epicurei, nec illumlabo....</p>
-                    <div class="decript-link clearfix"><a href="#">Читать далее</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="art-item">
-                  <div class="holder"><img src="images/art3.jpg">
-                    <div class="captholder">
-                      <p>Сказочный уикенд</p>
-                    </div>
-                  </div>
-                  <div class="decript-item">
-                    <p>Lorem ipsum dolor sit amet, accumsan ponderum mandamus nam an, quot omittam consetetur ea has. Nam et maiorum epicurei, nec illumlabo....</p>
-                    <div class="decript-link clearfix"><a href="#">Читать далее</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="art-item">
-                  <div class="holder"><img src="images/art1.jpg">
-                    <div class="captholder">
-                      <p>Золотая неделя в Праге</p>
-                    </div>
-                  </div>
-                  <div class="decript-item">
-                    <p>Lorem ipsum dolor sit amet, accumsan ponderum mandamus nam an, quot omittam consetetur ea has. Nam et maiorum epicurei, nec illumlabo....</p>
-                    <div class="decript-link clearfix"><a href="#">Читать далее</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="art-item">
-                  <div class="holder"><img src="images/art2.jpg">
-                    <div class="captholder">
-                      <p>Словенский уикенд</p>
-                    </div>
-                  </div>
-                  <div class="decript-item">
-                    <p>Lorem ipsum dolor sit amet, accumsan ponderum mandamus nam an, quot omittam consetetur ea has. Nam et maiorum epicurei, nec illumlabo....</p>
-                    <div class="decript-link clearfix"><a href="#">Читать далее</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="art-item">
-                  <div class="holder"><img src="images/art3.jpg">
-                    <div class="captholder">
-                      <p>Сказочный уикенд</p>
-                    </div>
-                  </div>
-                  <div class="decript-item">
-                    <p>Lorem ipsum dolor sit amet, accumsan ponderum mandamus nam an, quot omittam consetetur ea has. Nam et maiorum epicurei, nec illumlabo....</p>
-                    <div class="decript-link clearfix"><a href="#">Читать далее</a></div>
-                  </div>
-                </div>
-              </div>
               <div class="col-xs-12">
-                <div class="clearfix" id="button-more"><img src="images/glob.png">
-                  <p>Показать еще</p>
+                <h2>Lorem Ipsum: common examples</h2>
+                <div class="clearfix" id="cardTabs">
+                  <div class="tabs clearfix">
+                    <div class="spantabs clearfix"><span class="tab active"><a href="#">Описание</a></span><span class="tab"><a href="#">Правила</a></span><span class="tab"><a href="#">Видео</a></span><span class="tab"><a href="#">Фото</a></span><span class="tab"><a href="#">Менеджеры</a></span><span class="tab"><a href="#">Отзывы</a></span><span class="tab"><a href="#">Похожие туры</a></span><span class="tab"><a href="#">Заказать</a></span></div>
+                  </div>
+                  <div class="tab_content clearfix">
+                    <div class="tab-item clearfix">
+                      <div class="topinfo clearfix">
+                        <div class="infotur clearfix"><img src="images/cardtabspict.jpg"></div>
+                        <div class="infoblock clearfix">
+                          <div class="col-xs-12 col-sm-8 col-md-8">
+                            <div class="info-items clearfix">
+                              <div class="info-name">Выезд</div>
+                              <div class="item-info">
+                                <div class="infoCal">
+                                  <input type="text" id="datepicker"><i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="info-items clearfix">
+                              <div class="info-name">Длительность (дней)</div>
+                              <div class="item-info">9</div>
+                            </div>
+                            <div class="info-items clearfix">
+                              <div class="info-name">Город отправления</div>
+                              <div class="item-info">
+                                <ul>
+                                  <li>Одесса</li>
+                                  <li>Умань</li>
+                                  <li>Киев</li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="info-items clearfix">
+                              <div class="info-name">Страна</div>
+                              <div class="item-info">Греция</div>
+                            </div>
+                            <div class="info-items">
+                              <div class="info-name">Транспорт</div>
+                              <div class="item-info">Автобус</div>
+                            </div>
+                            <div class="info-items clearfix">
+                              <div class="info-name">Маршрут</div>
+                              <div class="item-info"></div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-4 col-md-4">
+                            <div class="priceblock">
+                              <div class="price">$1450.00</div><a href="#">Бронировать</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="botninfo clearfix">
+                        <div class="clearfix" id="dopinfo">
+                          <div class="leftSide clearfix"><span class="left-tab active">Включено в тур</span><span class="left-tab">Не включено в тур</span><span class="left-tab">Скидки / Доплаты</span></div>
+                          <div class="rightSide clearfix">
+                            <div class="right-item">
+                              <ul>
+                                <li>Проезд автобусом туристического класса;</li>
+                                <li>Размещение в апарт-отелях и виллах;</li>
+                                <li>Питание: завтраки;</li>
+                                <li>Сопровождение руководителем группы.</li>
+                              </ul>
+                            </div>
+                            <div class="right-item">right1 item</div>
+                            <div class="right-item">right2 item</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-item clearfix">item</div>
+                    <!--.tab-item.clearfix-->
+                    <!--    | item-->
+                    <!--.tab-item.clearfix-->
+                    <!--    | photo-->
+                    <!--.tab-item.clearfix-->
+                    <!--    | item-->
+                    <!--.tab-item.clearfix-->
+                    <!--    | item-->
+                    <!--.tab-item.clearfix-->
+                    <!--    | item-->
+                    <!--.tab-item.clearfix-->
+                    <!--    | item-->
+                  </div>
+                </div>
+                <div class="tourdescription clearfix">
+                  <p class="desctitle">1 День<span>Отправление</span></p>
+                  <ul>
+                    <li>В 07:00 - сбор группы, встреча с представителем компании DAV CLUB</li>
+                    <li>07:15 - отправление из Киева, Южный терминал ж/д вокзала.</li>
+                    <p>Присоединение туристов:</p>
+                  </ul>
+                  <ul>
+                    <li>~ 10:30-10:45 - г. Умань  (заправка ОККО на выезде из города по трассе Киев-Одесса);</li>
+                    <li>~ 14:00-14:15 - г. Одесса (остановка 8 троллейбуса в сторону города на центральном автовокзале Одессы).</li>
+                  </ul>
+                  <p class="desctitle">2 День<span>Прибитие</span><span>Прибитие в Грецию</span></p>
+                  <p>Размещение в апарт-отелях и виллах, на Олимпийской Ривьере, на берегу Эгейского моря. Здесь Вы сможете оценить знаменитое греческое гостеприимство, радушие и провести вечер в уютном ресторанчике</p>
+                  <div class="owl-carousel" id="cardslider">
+                    <div class="item"><img src="images/cruise2.jpg"></div>
+                    <div class="item"><img src="images/cruise3.jpg"></div>
+                    <div class="item"><img src="images/cruise2.jpg"></div>
+                    <div class="item"><img src="images/cruise3.jpg"></div>
+                    <div class="item"><img src="images/cruise2.jpg"></div>
+                    <div class="item"><img src="images/cruise3.jpg"></div>
+                  </div>
+                  <p class="desctitle">4 День<span>8-е Чудо Света - Метеоры</span><span>Завтрак.</span></p>
+                  <p>
+                    Поездка на Метеоры (от греч. μετέωρα - «парящие в воздухе»), (35€/взр, 25€/дети до 12 лет).
+                    Посещение монастыря (вх. билеты оплачиваются дополнительно ~ 2-3€). Этот уникальный природный феномен, находящийся на расстоянии 250 км от Паралии, по праву считается 8-м Чудом Света. Метеора по-гречески означает «парящий в воздухе». Этим словом обозначается комплекс открытых к посещению монастырей и скитов, основанных православным святым монахом Афанасием Метеорским, которые и вправду почти витают в небесах. Воздвигнутые на высоте от 300 до 400 метров, на скалистых вершинах поразительной крутизны, монастыри словно смотрят через долину Пиньоса на просторы древней Эллады. Неприступные каменные столбы, образовавшиеся миллионы лет назад, полностью отрезанные от мира, стали приютом монахов-отшельников еще с XI века. До 1920 г желающим попасть в монастырь приходилось либо карабкаться сюда по шатким приставным лестницам высотой 30 м и более (лестницы при малейшей опасности втаскивались наверх), либо совершать подъем на верёвке в плетёной сетке. Сегодня к монастырям проложены дороги и мосты. Однако снабжение некоторых монастырей и по сей день осуществляется с помощью таких сеток. Сегодня Вы сможете посетить колыбель православия (монастырь) и насладится прекрасными пейзажами.
+                    После посещений Метеор предлагаем отдохнуть и пообедать в национальной греческой таверне.
+                    Возвращение в аппарт отели и виллы. Свободное время. Отдых на море.
+                  </p>
+                  <p class="desctitle">5 День<span>Лутра Аридея - термальные купальни</span><span>Завтрак.</span></p>
+                  <p>
+                    Для желающих поездка в Лутраки (25€/взр, 20€/дети до 15 лет).
+                    Сказочно красивые горы, чистый воздух и кристальная вода горных ручейков ожидают вас в местечке Лутраки, расположенном недалеко от города Аридея. «Сад Эдема», как его ещё называют, впечатлит самого требовательного путешественника. Богатая растительность, водопады, головокружительное ущелье, протянувшееся на 15 км вдоль реки, таинственные сталагмитовые пещеры - и всё это посреди изумрудно-зелёного леса, через который протекает река Термопотамос (греч.: теплая река).
+                  </p>
+                  <p>
+                    Вы сможете посетить  горячие лечебные источники под открытым небом, известные ещё со времён Александра Македонского. Лечебная вода на протяжении многих веков плодотворно влияла на здоровье человека. Её терапевтические свойства показаны при недугах суставов и костей, дыхательной системы, гинекологических и кожных заболеваний, нервной системы, нарушениях циркуляции крови. Лечебная питьевая вода рекомендуется при заболеваниях печени, желчного пузыря, почек, пищеварительной системы, а также при плохой циркуляции крови. Гидролечебница располагает комплексом естественных водопадов с термальной водой и 4-мя бассейнами (4 м х 2.5 м), а также бассейном олимпийских размеров (25 м х 12 м) под открытым небом (вх. билеты в басей оплачиваются дополнительно).
+                    Возвращение в аппарт отели и виллы. Свободное время. Отдых на море.
+                    Подробнее: http://www.davclub.ua/book.php?date=28.04.2018&tour_id=370&agent_id=2¤cy_id=3
+                  </p>
                 </div>
               </div>
             </div>
