@@ -1,6 +1,10 @@
 @font-face {
-  font-family: "abosanova";
-  src: url("fonts/abosanova.woff2") format("woff2"), url("fonts/abosanova.woff") format("woff"), url("fonts/abosanova.ttf") format("truetype"); }
+  font-family: "informCTT";
+  src: url("fonts/InformCTT.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "astoria";
+  src: url("fonts/astoria_deco.ttf") format("truetype"); }
 
 * {
   margin: 0;
@@ -64,16 +68,49 @@ section {
 header {
   display: block; }
 
-.top-slider {
-  background: url("images/slider1.jpg") center center;
-  -webkit-background-size: cover;
-  background-size: cover;
-  min-height: 400px;
-  height: 100%; }
+#topSlider {
+  overflow: hidden;
+  height: 400px; }
+
+#topSlider .full-screen {
+  background-size: 100%;
+  -webkit-background-size: 100%;
+  background-position: top center;
+  background-repeat: no-repeat; }
+
+.carousel-control {
+  z-index: 10;
+  width: 15% !important;
+  opacity: 1; }
+
+.carousel-control.left {
+  left: -4%;
+  top: 40%;
+  background: url("images/topSliderarr.png") 130px 0 no-repeat; }
+
+.carousel-control.right {
+  right: -4%;
+  top: 40%;
+  background: url("images/topSliderarr.png") -67px 0 no-repeat; }
+
+.topFoo {
+  position: absolute;
+  width: 100%;
+  top: 0; }
+
+.formbtn {
+  background: #6585ff;
+  padding: 8px 10px;
+  width: 50%;
+  margin: 0 auto; }
+  .formbtn a {
+    color: #ffff00;
+    text-decoration: none; }
 
 .header-content {
   overflow: hidden;
-  height: 100%; }
+  height: 100%;
+  z-index: 2; }
 
 .top-header {
   background-color: rgba(0, 0, 0, 0.5);
@@ -204,7 +241,7 @@ header {
 
 .choosevocation {
   background-color: rgba(0, 0, 0, 0.5);
-  margin: 20px auto;
+  margin: 0 auto;
   width: 95%;
   padding: 4px 0 0; }
   .choosevocation .form-group {
@@ -252,6 +289,34 @@ header {
     border-radius: 6px; }
   .choosevocation input[type="image"] {
     margin: 20px 0 0 10px; }
+
+#passport {
+  position: absolute;
+  z-index: 2;
+  background: url("images/passport.png") 0 0 no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  right: 0;
+  bottom: -90px;
+  width: 85px;
+  height: 85px; }
+  #passport a {
+    text-indent: -9999px;
+    display: block; }
+  #passport:hover {
+    background: url("images/passport.png") 0 -87px no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%; }
+    #passport:hover a {
+      text-indent: 0;
+      font-size: 12px;
+      color: #ffffff;
+      text-decoration: none;
+      text-align: center;
+      padding: 18px;
+      font-weight: bold; }
+      #passport:hover a span {
+        display: block; }
 
 .menu-wrap {
   width: 100%;
@@ -384,7 +449,7 @@ nav {
         text-align: center;
         width: 33%;
         position: relative;
-        padding: 20px 0; }
+        padding: 20px 0 35px 0; }
         .proposeSlider .proposeSliderTabs .tabs .tab a {
           color: #292929;
           font-weight: bold;
@@ -544,7 +609,10 @@ nav {
           font-weight: bold;
           margin-right: 5px; }
           .proposeSlider .mainNewsTabs .tab-item .item .short-text a:hover {
-            text-decoration: none; }
+            text-decoration: none;
+            font-size: 15px;
+            background: url("images/newsArr.png") 15px 10px no-repeat;
+            padding-left: 30px; }
 
 .ourTours {
   background-color: #e9e5e2;
@@ -571,12 +639,12 @@ nav {
   .ourTours .cat-container .cat-pict p,
   .jc-items .cat-pict p {
     background-color: #fff;
-    padding: 10px;
+    padding: 10px 0;
     margin: 0;
     text-align: center;
-    font-family: "abosanova", sans-serif;
+    font-family: "informCTT", sans-serif;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 14px;
     border-top: 3px solid #6585ff; }
   .ourTours .cat-container .cat-pict:nth-child(1),
   .jc-items .cat-pict:nth-child(1) {
@@ -645,7 +713,7 @@ nav {
         text-align: center;
         width: 33%;
         position: relative;
-        padding: 20px 0; }
+        padding: 20px 0 35px 0; }
         .mainNews .proposeSliderTabs .tabs .tab a {
           color: #292929;
           font-weight: bold;
@@ -805,16 +873,23 @@ nav {
           font-weight: bold;
           margin-right: 5px; }
           .mainNews .mainNewsTabs .tab-item .item .short-text a:hover {
-            text-decoration: none; }
+            text-decoration: none;
+            font-size: 15px;
+            background: url("images/newsArr.png") 15px 10px no-repeat;
+            padding-left: 30px; }
 
 .testimonials {
-  padding: 20px 0; }
+  padding: 20px 0 30px 0;
+  margin-bottom: 50px; }
   .testimonials h3 {
     text-align: center;
     color: #6585ff;
     text-transform: uppercase;
     font-size: 22px;
-    margin: 30px 0; }
+    margin: 30px 0;
+    font-family: "Roboto", sans-serif;
+    text-shadow: 1px 0 1px rgba(0, 0, 0, 0.5);
+    font-weight: 400; }
   .testimonials .testimonials-block .item {
     border-top: 3px solid #6585ff;
     padding-top: 10px; }
@@ -822,8 +897,10 @@ nav {
       width: 100%;
       text-align: center;
       color: #000;
-      margin-top: 5px;
-      margin-bottom: 15px; }
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-family: "astoria", sans-serif;
+      font-size: 30px; }
     .testimonials .testimonials-block .item img {
       width: 300px;
       float: left;
@@ -834,7 +911,7 @@ nav {
   .testimonials .testimonials-block .owl-dots {
     text-align: center;
     position: relative;
-    bottom: -12px; }
+    bottom: -30px; }
     .testimonials .testimonials-block .owl-dots .owl-dot {
       width: 13px;
       height: 13px;
@@ -1126,7 +1203,8 @@ aside {
             width: 90%;
             border: none;
             background: #e6e6e6;
-            padding: 2px 0 0 10px; }
+            padding: 2px 0;
+            margin: 0 0 0 3px; }
       #cardTabs .tab-item .info-items img {
         float: left;
         max-width: 656px;
@@ -1366,6 +1444,21 @@ footer {
     margin-right: 4px; } }
 
 @media only screen and (max-width: 1024px) {
+  #topSlider {
+    height: auto; }
+  .carousel-control.left {
+    background: url("images/topSliderarr.png") 87px 0 no-repeat !important; }
+  #topSlider .full-screen {
+    background-size: cover;
+    -webkit-background-size: cover; }
+  .choosevocation {
+    margin: 50px auto; }
+  #passport {
+    bottom: -40px; }
+  .proposeSlider .proposeSliderTabs .tabs {
+    width: 60%; }
+  .proposeSlider .proposeSliderTabs .tab_item .item .decr-item .descr-link a {
+    padding: 3px 10px; }
   .sf-menu a {
     padding: .75em .8em !important; }
   .sf-arrows .sf-with-ul {
@@ -1380,19 +1473,38 @@ footer {
     font-size: 15px; }
   .ourTours .cat-container {
     grid-template-columns: repeat(3, 1fr); }
+  .ourTours .cat-pict img {
+    width: 100%;
+    margin: 0 auto; }
   .ourTours .cat-pict:nth-child(1) {
-    grid-column: 1/3; }
+    grid-column: 1/3 !important; }
   .ourTours .cat-pict:nth-child(10) {
-    grid-column: 4/2; } }
+    grid-column: 1/4 !important; }
+  #cardTabs .tabs .tab {
+    padding: 13px 18px !important; }
+  #cardTabs .tab-item .info-items .item-info,
+  #cardTabs .tab-item .info-items .info-name {
+    font-size: 14px; }
+  #cardTabs .tab-item .infoblock .priceblock {
+    top: 101px; }
+  #dopinfo .leftSide span.left-tab {
+    font-size: 16px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+  #topSlider {
+    overflow: hidden; }
+    #topSlider .full-screen {
+      background-size: cover !important;
+      -webkit-background-size: cover !important; }
   .top-header .top-enter .top-searchIcon {
     width: 40%;
     margin-right: 10px; }
     .top-header .top-enter .top-searchIcon img {
       float: none;
       width: auto; }
+  .carousel-control.left {
+    background: url("images/topSliderarr.png") 79px 0 no-repeat !important; }
   nav {
     background: none;
     float: left; }
@@ -1400,11 +1512,17 @@ footer {
     margin: 0 0 15px 0; }
   .sf-menu {
     display: none !important; }
+  .choosevocation {
+    margin: 0 auto; }
   .choosevocation .fist .form-group {
     width: 50%;
     margin: 0; }
   .choosevocation input[type="text"] {
     width: 95%; }
+  .proposeSlider .proposeSliderTabs .tabs {
+    width: 70%; }
+  #passport {
+    bottom: -90px; }
   .subfooter .fooClass {
     margin: 0 0 20px 0; }
     .subfooter .fooClass:after {
@@ -1415,6 +1533,25 @@ footer {
       visibility: hidden; }
   .subfooter .list-link {
     width: 100%; }
+  #cardTabs .tabs .spantabs {
+    width: 100%; }
+  #cardTabs .tabs .tab {
+    padding: 13px 9px !important; }
+  #cardTabs .tab-item .infotur {
+    float: none; }
+    #cardTabs .tab-item .infotur img {
+      margin: 0 auto;
+      width: 100%; }
+  #cardTabs .tab-item .infotur,
+  #cardTabs .tab-item .infoblock {
+    width: 100%; }
+  #cardTabs .tab-item .infoblock .priceblock {
+    top: 80px;
+    left: 50px; }
+  #dopinfo .leftSide {
+    width: 35%; }
+  #dopinfo .rightSide {
+    width: 60%; }
   aside .prod_slider #slideimg .jc-items {
     width: 2000em;
     height: auto; }
@@ -1440,8 +1577,20 @@ footer {
     width: 70%; }
     .choosevocation .form-group {
       width: 32%; }
+  .carousel-control.left,
+  .carousel-control.right {
+    top: 55%; }
+  .carousel-control.left {
+    background: url("images/topSliderarr.png") -250% 0 no-repeat !important; }
   .mainNews .mainNewsTabs .tab-item .item .short-text {
     font-size: 13px; }
+  #cardTabs .tab-item .infoblock .priceblock {
+    position: initial;
+    width: 60%;
+    margin: 10px auto; }
+  #cardTabs .tabs .tab.active a,
+  #cardTabs .tabs .tab:hover a {
+    font-size: 12px; }
   .footer-social,
   .footer-copy {
     text-align: center; } }
@@ -1462,13 +1611,25 @@ footer {
   .ourTours .cat-container {
     grid-template-columns: repeat(2, 1fr); }
   .ourTours .cat-pict:nth-child(1) {
-    grid-column: 1/3; }
+    grid-column: 1/3 !important; }
   .ourTours .cat-pict:nth-child(10) {
-    grid-column: 1/3; }
+    grid-column: 1/3 !important; }
   .choosevocation .fist .form-group {
     width: 100%; }
   .mainNews .mainNewsTabs .tab-item .item .short-text a {
-    top: 93%; } }
+    top: 93%; }
+  #cardTabs .tabs .tab {
+    float: none;
+    text-align: left; }
+    #cardTabs .tabs .tab.active:after, #cardTabs .tabs .tab:hover:after {
+      content: '';
+      position: absolute;
+      border: 8px solid transparent;
+      border-left: 10px solid #fa7b0a !important;
+      left: 0;
+      margin-left: -8px;
+      top: 35%;
+      width: 0; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 600px) {
@@ -1476,20 +1637,29 @@ footer {
     padding: 23px 0 20px 15px; }
   .mainNews .mainNewsTabs .tab-item .item .short-text {
     width: 80%; }
+  #dopinfo .leftSide,
+  #dopinfo .rightSide {
+    width: 100%;
+    float: none; }
+  #dopinfo .leftSide span.left-tab.active {
+    border-left: none;
+    border-bottom: 2px solid #fa7b0a; }
+  #dopinfo .rightSide .right-item {
+    padding: 10px 0; }
   .subfooter .sub-form {
     width: 90%;
     margin: 40px auto; } }
 
 @media only screen and (max-width: 480px) {
   .ourTours .cat-container {
-    grid-template-columns: repeat(1, minmax(auto, 1fr)); }
+    grid-template-columns: repeat(2, 1fr); }
   .ourTours .cat-pict img {
     width: 100%;
     height: auto; }
   .ourTours .cat-pict:nth-child(1) {
-    grid-column: 1/1; }
+    grid-column: 1/3 !important; }
   .ourTours .cat-pict:nth-child(10) {
-    grid-column: 1/1; }
+    grid-column: 1/3; }
   .mainNews .mainNewsTabs .tabs {
     width: 100%; }
   .testimonials .testimonials-block .item img {
@@ -1520,7 +1690,20 @@ footer {
   .proposeSlider .proposeSliderTabs .owl-nav div {
     top: 25% !important; }
   .proposeSlider .proposeSliderTabs .tab_item .item .decr-item p {
-    padding: 15px 0 8px 15px; } }
+    padding: 15px 0 8px 15px; }
+  #cardTabs .tab-item .info-items .info-name, #cardTabs .tab-item .info-items .item-info {
+    display: initial; }
+  #cardTabs .tab-item .info-items {
+    padding: 10px 0; }
+  .ourTours .cat-container {
+    grid-template-columns: repeat(1, 1fr); }
+  .ourTours .cat-pict img {
+    width: 100%;
+    height: auto; }
+  .ourTours .cat-pict:nth-child(1) {
+    grid-column: 1/1 !important; }
+  .ourTours .cat-pict:nth-child(10) {
+    grid-column: 1/1 !important; } }
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
