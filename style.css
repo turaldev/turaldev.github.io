@@ -1616,7 +1616,7 @@ footer {
     .choosevocation .form-group {
       width: 32%; }
   .topSliderControl {
-    top: 7%; }
+    top: 6%; }
   .mainNews .mainNewsTabs .tab-item .item .short-text {
     font-size: 13px; }
   #cardTabs .tab-item .infoblock .priceblock {
@@ -1753,6 +1753,8 @@ footer {
     grid-column: 1/1 !important; }
   .ourTours .cat-pict:nth-child(10) {
     grid-column: 1/1 !important; }
+  .ourTours .cat-container .cat-pict p, .jc-items .cat-pict p {
+    font-size: 18px; }
   #button-more {
     width: 70%; } }
 
