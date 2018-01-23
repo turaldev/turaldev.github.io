@@ -1616,7 +1616,7 @@ footer {
     .choosevocation .form-group {
       width: 32%; }
   .topSliderControl {
-    top: 9%; }
+    top: 7%; }
   .mainNews .mainNewsTabs .tab-item .item .short-text {
     font-size: 13px; }
   #cardTabs .tab-item .infoblock .priceblock {
@@ -1693,7 +1693,7 @@ footer {
 
 @media only screen and (max-width: 480px) {
   #topSlider {
-    height: 500px; }
+    height: 480px; }
   .ourTours .cat-container {
     grid-template-columns: repeat(2, 1fr); }
   .ourTours .cat-pict img {
@@ -1757,7 +1757,10 @@ footer {
     width: 70%; } }
 
 @media only screen and (max-width: 320px) {
-  /* Custom, iPhone Retina */ }
+  .header-logo h1 {
+    font-size: 22px; }
+  #passport {
+    bottom: -7%; } }
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
