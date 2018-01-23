@@ -97,7 +97,7 @@ jQuery(document).ready(function($){
         margin: 10,
         center: false,
         autoplayTimeout: 2000,
-        autoplay: false,
+        autoplay: true,
         navText: "",
         responsiveClass:true,
         responsive:{
@@ -127,8 +127,7 @@ jQuery(document).ready(function($){
         pagination: true,
         margin: 10,
         center: false,
-        autoplayTimeout: 2000,
-        autoplay: false,
+        autoplay: true,
         navText: "",
         responsiveClass:true,
         responsive:{
@@ -139,12 +138,14 @@ jQuery(document).ready(function($){
             },
             600:{
                 items:3,
-                nav:false
+                nav:false,
+                autoplayTimeout: 2000
             },
             1000:{
                 items:3,
                 nav:true,
                 loop: true,
+                autoplayTimeout: 2000
 
             }
         }
@@ -154,8 +155,7 @@ jQuery(document).ready(function($){
         pagination: true,
         margin: 10,
         center: false,
-        autoplayTimeout: 2000,
-        autoplay: false,
+        autoplay: true,
         navText: "",
         responsiveClass:true,
         responsive:{
@@ -166,12 +166,14 @@ jQuery(document).ready(function($){
             },
             600:{
                 items:3,
-                nav:false
+                nav:false,
+                autoplayTimeout: 2000
             },
             1000:{
                 items:3,
                 nav:true,
                 loop: true,
+                autoplayTimeout: 2000
 
             }
         }
@@ -181,7 +183,6 @@ jQuery(document).ready(function($){
         pagination: true,
         margin: 10,
         center: false,
-        autoplayTimeout: 2000,
         autoplay: false,
         navText: "",
         responsiveClass:true,
@@ -193,7 +194,8 @@ jQuery(document).ready(function($){
             },
             670:{
                 items:1,
-                nav: true
+                nav: true,
+                autoplayTimeout: 2000
             },
             992:{
                 items:2,
@@ -203,6 +205,7 @@ jQuery(document).ready(function($){
                 items: 3,
                 nav:true,
                 loop: true,
+                autoplayTimeout: 2000
 
             }
         }
@@ -212,8 +215,7 @@ jQuery(document).ready(function($){
         pagination: true,
         margin: 10,
         center: false,
-        autoplayTimeout: 2000,
-        autoplay: false,
+        autoplay: true,
         navText: "",
         responsiveClass:true,
         responsive:{
@@ -225,16 +227,21 @@ jQuery(document).ready(function($){
 
             670:{
                 items: 1,
-                nav: true
+                nav: true,
+                autoplayTimeout: 2000
+
             },
             992:{
                 items:2,
-                nav: true
+                nav: true,
+                autoplayTimeout: 2000
+
             },
             1000:{
                 items:3,
                 nav:true,
                 loop: true,
+                autoplayTimeout: 2000
 
             }
         }
@@ -245,6 +252,7 @@ jQuery(document).ready(function($){
         margin: 20,
         nav: true,
         dots: true,
+        autoplay: true,
         navText: "",
         responsiveClass:true,
         responsive:{
@@ -255,12 +263,14 @@ jQuery(document).ready(function($){
             },
             600:{
                 items:1,
-                nav:false
+                nav:false,
+                autoplayTimeout: 2000
             },
             1000:{
                 items:2,
                 nav:true,
                 loop: true,
+                autoplayTimeout: 2000
 
             }
         }
@@ -270,14 +280,19 @@ jQuery(document).ready(function($){
     $('#sidepropose').owlCarousel({
         items: 1,
         navText: "",
-        nav: true
+        nav: true,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000
     });
 // Relatetd tours
     $("#reltours").owlCarousel({
         items: 4,
         nav: true,
+        loop: true,
         margin: 20,
         navText: "",
+        autoplay: true,
         responsiveClass:true,
         responsive:{
             0:{
@@ -287,13 +302,15 @@ jQuery(document).ready(function($){
             },
             600:{
                 items: 2,
-                nav: true
+                nav: true,
+                autoplayTimeout: 2000
             },
 
             1000:{
                 items: 3,
                 nav: true,
-                loop: true
+
+                autoplayTimeout: 2000
 
             }
         }
@@ -303,8 +320,10 @@ jQuery(document).ready(function($){
     $("#relpostart").owlCarousel({
         items: 3,
         nav: true,
+        loop: true,
         margin: 20,
         navText: "",
+        autoplay: true,
         responsiveClass:true,
         responsive:{
             0:{
@@ -314,13 +333,14 @@ jQuery(document).ready(function($){
             },
             600:{
                 items: 2,
-                nav: true
+                nav: true,
+                autoplayTimeout: 2000
             },
 
             1000:{
                 items: 3,
                 nav: true,
-                loop: true
+                autoplayTimeout: 2000
 
             }
         }
@@ -331,26 +351,33 @@ jQuery(document).ready(function($){
         nav: true,
         margin: 20,
         navText: "",
+        autoplay: true,
         responsiveClass:true,
         responsive:{
             0:{
                 items: 1,
                 nav: true,
+                loop: true,
                 autoplayTimeout: 2000
             },
             600:{
                 items: 3,
-                nav: true
+                nav: true,
+                loop: true,
+                autoplayTimeout: 2000
             },
             992:{
                 items: 3 ,
-                nav: true
+                nav: true,
+                loop: true,
+                autoplayTimeout: 2000
 
             },
             1000:{
                 items: 4,
                 nav: true,
-                loop: true
+                loop: true,
+                autoplayTimeout: 2000
 
             }
         }
@@ -365,13 +392,17 @@ jQuery(document).ready(function($){
         $(".top-search").fadeOut(300);
     });
 // form button
+//     $("#formbtn").magnificPopup({
+//         type: 'inline';
+//     });
+
     $("#formbtn").click(function(){
         $(".choosevocation").fadeIn(300);
     });
-    $(".close").click(function () {
+    $(".closeform").click(function () {
         $(".choosevocation").fadeOut(300);
     });
-    $("#dragform").draggable();
+
 // vertical carousel on sidebar
 
     $('#slideimg').jcarousel( {

@@ -81,20 +81,24 @@ header {
   background-position: top center;
   background-repeat: no-repeat; }
 
-.carousel-control {
-  z-index: 10;
-  width: 15% !important;
-  opacity: 1; }
-
-.carousel-control.left {
-  left: -4%;
-  top: 40%;
-  background: url("images/topSliderarr.png") 130px 0 no-repeat; }
-
-.carousel-control.right {
-  right: -4%;
-  top: 40%;
-  background: url("images/topSliderarr.png") -67px 0 no-repeat; }
+.topSliderControl {
+  position: absolute;
+  width: 100%;
+  height: 68px;
+  top: 8%;
+  z-index: 10; }
+  .topSliderControl a.left,
+  .topSliderControl a.right {
+    display: block;
+    position: absolute;
+    height: 68px;
+    width: 67px; }
+  .topSliderControl a.left {
+    left: 3%;
+    background: url("images/topSliderarr.png") 0 0 no-repeat; }
+  .topSliderControl a.right {
+    right: 3%;
+    background: url("images/topSliderarr.png") -67px 0 no-repeat; }
 
 .topFoo {
   position: absolute;
@@ -185,7 +189,7 @@ header {
   display: none; }
 
 .top-search .close,
-.choosevocation .close {
+.choosevocation .closeform {
   width: 38px;
   height: 33px;
   cursor: pointer;
@@ -194,7 +198,7 @@ header {
   margin: 10px 0;
   background: url("images/srch-cross.png"); }
   .top-search .close:hover,
-  .choosevocation .close:hover {
+  .choosevocation .closeform:hover {
     opacity: 1; }
 
 .top-search .src-form {
@@ -1460,16 +1464,6 @@ footer {
     font-size: 14px; }
 
 /*==========  Desktop First Method  ==========*/
-@media only screen and (max-width: 1920px) {
-  .carousel-control.left {
-    left: -4%;
-    top: 40%;
-    background: url("images/topSliderarr.png") 123px 0 no-repeat; } }
-
-@media only screen and (max-width: 1920px) {
-  .carousel-control.left {
-    background: url("images/topSliderarr.png") 130px 0 no-repeat; } }
-
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
   .top-header .top-tel {
@@ -1482,8 +1476,6 @@ footer {
 @media only screen and (max-width: 1024px) {
   #topSlider {
     height: 470px; }
-  .carousel-control.left {
-    background: url("images/topSliderarr.png") 87px 0 no-repeat !important; }
   #topSlider .full-screen {
     background-size: cover;
     -webkit-background-size: cover; }
@@ -1539,8 +1531,6 @@ footer {
     .top-header .top-enter .top-searchIcon img {
       float: none;
       width: auto; }
-  .carousel-control.left {
-    background: url("images/topSliderarr.png") 79px 0 no-repeat !important; }
   nav {
     background: none;
     float: left; }
@@ -1563,7 +1553,7 @@ footer {
     top: -8%;
     right: 5%; }
   aside .prod_slider #block_arrows .next {
-    bottom: 100%;
+    top: -8%;
     right: 0; }
   .subfooter .fooClass {
     margin: 0 0 20px 0; }
@@ -1618,18 +1608,15 @@ footer {
   .choosevocation {
     display: none;
     position: fixed;
-    top: 50%;
+    top: 35%;
     left: 10%;
     z-index: 5;
     width: 80%;
     background-color: rgba(0, 0, 0, 0.8); }
     .choosevocation .form-group {
       width: 32%; }
-  .carousel-control.left,
-  .carousel-control.right {
-    top: 55%; }
-  .carousel-control.left {
-    background: url("images/topSliderarr.png") 35px 0 no-repeat !important; }
+  .topSliderControl {
+    top: 9%; }
   .mainNews .mainNewsTabs .tab-item .item .short-text {
     font-size: 13px; }
   #cardTabs .tab-item .infoblock .priceblock {
@@ -1668,11 +1655,6 @@ footer {
     bottom: -40px; }
   .choosevocation .fist .form-group {
     width: 100%; }
-  .carousel-control.left,
-  .carousel-control.right {
-    top: 65%; }
-  .carousel-control.left {
-    background: url("images/topSliderarr.png") -80% 0 no-repeat !important; }
   .mainNews .mainNewsTabs .tab-item .item .short-text a {
     top: 93%; }
   #cardTabs .tabs .tab {
@@ -1696,8 +1678,6 @@ footer {
     padding: 23px 0 20px 15px; }
   .mainNews .mainNewsTabs .tab-item .item .short-text {
     width: 80%; }
-  .carousel-control.left {
-    background: url("images/topSliderarr.png") -50% 0 no-repeat !important; }
   #dopinfo .leftSide,
   #dopinfo .rightSide {
     width: 100%;
@@ -1733,7 +1713,9 @@ footer {
   .testimonials .testimonials-block .item p {
     margin: 20px 0; }
   .choosevocation {
-    width: 65%; }
+    width: 65%;
+    top: 2%;
+    left: 15%; }
     .choosevocation .form-group {
       float: none;
       width: 100%; }
@@ -1741,14 +1723,6 @@ footer {
         padding: 5px 20px 0 0; }
   #passport {
     bottom: -2%; }
-  .carousel-control.left,
-  .carousel-control.right {
-    top: 60%; }
-  .carousel-control.left {
-    background: url("images/topSliderarr.png") -4% 0 no-repeat !important;
-    left: 2%; }
-  .carousel-control.right {
-    right: 2%; }
   .mainNews .mainNewsTabs .tab-item .item .short-text {
     width: 70%; }
   .mainNews .mainNewsTabs .tab-item .item .short-text a {
@@ -1775,10 +1749,6 @@ footer {
   .ourTours .cat-pict img {
     width: 100%;
     height: auto; }
-  .carousel-control {
-    width: 18% !important; }
-  .carousel-control.left {
-    background: url("images/topSliderarr.png") -1% 0 no-repeat !important; }
   .ourTours .cat-pict:nth-child(1) {
     grid-column: 1/1 !important; }
   .ourTours .cat-pict:nth-child(10) {
@@ -1787,10 +1757,7 @@ footer {
     width: 70%; } }
 
 @media only screen and (max-width: 320px) {
-  .carousel-control {
-    width: 21% !important; }
-    .carousel-control .carousel-control.left {
-      background: url("images/topSliderarr.png") 0 0 no-repeat !important; } }
+  /* Custom, iPhone Retina */ }
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
