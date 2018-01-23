@@ -277,7 +277,26 @@ jQuery(document).ready(function($){
         items: 4,
         nav: true,
         margin: 20,
-        navText: ""
+        navText: "",
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items: 1,
+                nav: true,
+                autoplayTimeout: 2000
+            },
+            600:{
+                items: 2,
+                nav: true
+            },
+
+            1000:{
+                items: 3,
+                nav: true,
+                loop: true
+
+            }
+        }
 
     });
 // Relatetd tours
@@ -352,6 +371,7 @@ jQuery(document).ready(function($){
     $(".close").click(function () {
         $(".choosevocation").fadeOut(300);
     });
+    $("#dragform").draggable();
 // vertical carousel on sidebar
 
     $('#slideimg').jcarousel( {

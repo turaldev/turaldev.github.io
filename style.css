@@ -1466,6 +1466,10 @@ footer {
     top: 40%;
     background: url("images/topSliderarr.png") 123px 0 no-repeat; } }
 
+@media only screen and (max-width: 1920px) {
+  .carousel-control.left {
+    background: url("images/topSliderarr.png") 130px 0 no-repeat; } }
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
   .top-header .top-tel {
@@ -1682,7 +1686,9 @@ footer {
       left: 0;
       margin-left: -8px;
       top: 35%;
-      width: 0; } }
+      width: 0; }
+  #button-more {
+    width: 40%; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 600px) {
@@ -1746,7 +1752,9 @@ footer {
   .mainNews .mainNewsTabs .tab-item .item .short-text {
     width: 70%; }
   .mainNews .mainNewsTabs .tab-item .item .short-text a {
-    top: 91%; } }
+    top: 91%; }
+  #button-more {
+    width: 60%; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 380px) {
@@ -1774,7 +1782,9 @@ footer {
   .ourTours .cat-pict:nth-child(1) {
     grid-column: 1/1 !important; }
   .ourTours .cat-pict:nth-child(10) {
-    grid-column: 1/1 !important; } }
+    grid-column: 1/1 !important; }
+  #button-more {
+    width: 70%; } }
 
 @media only screen and (max-width: 320px) {
   .carousel-control {
