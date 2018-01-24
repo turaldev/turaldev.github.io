@@ -68,7 +68,8 @@ section {
 header {
   display: block; }
   header .top-slider {
-    width: 100%; }
+    width: 100%;
+    position: relative; }
 
 #topSlider {
   overflow: hidden;
@@ -85,7 +86,7 @@ header {
   position: absolute;
   width: 100%;
   height: 68px;
-  top: 7%;
+  top: 50%;
   z-index: 10; }
   .topSliderControl a.left,
   .topSliderControl a.right {
@@ -316,7 +317,7 @@ header {
   background: url("images/passport.png") 0 0 no-repeat;
   -webkit-background-size: 100%;
   background-size: 100%;
-  right: 0;
+  right: 4%;
   bottom: -90px;
   width: 85px;
   height: 85px; }
@@ -1700,6 +1701,12 @@ footer {
       margin-right: 15px; } }
 
 @media only screen and (max-width: 768px) {
+  .header-content,
+  .cat-container,
+  .mainNewsTabs,
+  .proposeSliderTabs,
+  .testimonials-block {
+    padding: 0 15px !important; }
   .top-header {
     font-size: 22px; }
     .top-header .top-tel {
@@ -1724,7 +1731,7 @@ footer {
     .choosevocation .form-group {
       width: 32%; }
   .topSliderControl {
-    top: 9%; }
+    top: 55%; }
   .mainNews .mainNewsTabs .tab-item .item .short-text {
     font-size: 13px; }
     .mainNews .mainNewsTabs .tab-item .item .short-text a {
@@ -1872,8 +1879,6 @@ footer {
     grid-column: 1/1 !important; }
   .ourTours .cat-container .cat-pict p, .jc-items .cat-pict p {
     font-size: 18px; }
-  .topSliderControl {
-    top: 6%; }
   .formbtn {
     width: 70%; }
   .header-logo h1 {
