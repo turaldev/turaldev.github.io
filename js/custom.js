@@ -1,4 +1,10 @@
 jQuery(document).ready(function($){
+    var wWidth = $(window).width();
+    if(wWidth <= 768) {
+        $("#head").addClass("container-fluid");
+    } else {
+        $("#head").addClass("container");
+    }
 
     // top menu
 
@@ -181,7 +187,7 @@ jQuery(document).ready(function($){
 // mainArticles
     $("#mainArt").owlCarousel({
         pagination: true,
-        margin: 10,
+        margin: 20,
         center: false,
         autoplay: false,
         navText: "",
@@ -210,6 +216,7 @@ jQuery(document).ready(function($){
             }
         }
     });
+
 // Main News
     $("#mainNews1").owlCarousel({
         pagination: true,
@@ -258,12 +265,14 @@ jQuery(document).ready(function($){
         responsive:{
             0:{
                 items: 1,
-                nav:true,
+                nav: true,
+                loop: true,
                 autoplayTimeout: 2000
             },
             600:{
                 items:1,
-                nav:false,
+                nav: true,
+                loop: true,
                 autoplayTimeout: 2000
             },
             1000:{
