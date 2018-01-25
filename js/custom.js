@@ -37,8 +37,43 @@ jQuery(document).ready(function($){
         return false;
     });
 // end top menu
+// sandwich on card tur
+    $(".sandBtm, .menu_item").click(function() {
+        $("#sandwich").toggleClass("active");
+    });
+    $(".sandBtm").click(function(){
+        if($(".openspan").is(":visible")) {
+            $(".openspan").slideUp(600);
+        }else{
+            $(".openspan").slideDown(600);
+        }
+
+    });
 // card datepicker
-    $( "#datepicker" ).datepicker();
+    $.datepicker.regional['ru'] ={
+        closeText: "Закрыть",
+        prevText: "&#x3C;Пред",
+        nextText: "След&#x3E;",
+        currentText: "Сегодня",
+        monthNames: [ "Январь","Февраль","Март","Апрель","Май","Июнь",
+            "Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь" ],
+        monthNamesShort: [ "Янв","Фев","Мар","Апр","Май","Июн",
+            "Июл","Авг","Сен","Окт","Ноя","Дек" ],
+        dayNames: [ "воскресенье","понедельник","вторник","среда","четверг","пятница","суббота" ],
+        dayNamesShort: [ "вск","пнд","втр","срд","чтв","птн","сбт" ],
+        dayNamesMin: [ "Вс","Пн","Вт","Ср","Чт","Пт","Сб" ],
+        weekHeader: "Нед",
+        dateFormat: "dd.mm.yy",
+        firstDay: 1,
+        isRTL: false,
+        showMonthAfterYear: false,
+        yearSuffix: ""
+    };
+    $.datepicker.setDefaults($.datepicker.regional['ru']);
+    $( "#datepicker" ).datepicker({
+            dateFormat: 'dd.mm.yy'
+        }
+    );
 
 // indextabs
     $('.proposeSliderTabs .tab').click(function(){
@@ -54,7 +89,8 @@ jQuery(document).ready(function($){
     }).eq(0).addClass('active');
 
 // card Tabs
-    $('#cardTabs .tab').click(function(){
+    $('#cardTabs .tab').click(function(e){
+        e.preventDefault();
         $('#cardTabs .tab').removeClass('active')
             .eq($(this).index()).addClass('active');
         $('.tab-item').hide().eq($(this).index()).fadeIn()

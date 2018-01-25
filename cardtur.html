@@ -186,7 +186,18 @@
                 <h2>Lorem Ipsum: common examples</h2>
                 <div class="clearfix" id="cardTabs">
                   <div class="tabs clearfix">
-                    <div class="spantabs clearfix"><span class="tab active"><a href="#">Описание</a></span><span class="tab"><a href="#">Правила</a></span><span class="tab"><a href="#">Видео</a></span><span class="tab"><a href="#">Фото</a></span><span class="tab"><a href="#">Менеджеры</a></span><span class="tab"><a href="#">Отзывы</a></span><span class="tab"><a href="#">Похожие туры</a></span><span class="tab"><a href="#">Заказать</a></span></div>
+                    <div class="spantabs clearfix">
+                      <div class="hidespan clearfix hidden-sm hidden-md hidden-lg">
+                        <div class="sandBtm hidden-sm hidden-md hidden-lg">
+                          <div id="sandwich">
+                            <div class="sw-topper"></div>
+                            <div class="sw-bottom"></div>
+                            <div class="sw-footer"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="openspan clearfix"><span class="tab active"><a href="#">Описание</a></span><span class="tab"><a href="#">Правила</a></span><span class="tab"><a href="#">Видео</a></span><span class="tab"><a href="#">Фото</a></span><span class="tab"><a href="#">Менеджеры</a></span><span class="tab"><a href="#">Отзывы</a></span><span class="tab"><a href="#">Похожие туры</a></span><span class="tab"><a href="#">Заказать</a></span></div>
+                    </div>
                   </div>
                   <div class="tab_content clearfix">
                     <div class="tab-item clearfix">
@@ -198,7 +209,7 @@
                               <div class="info-name">Выезд</div>
                               <div class="item-info">
                                 <div class="infoCal">
-                                  <input type="text" id="datepicker"><i class="fa fa-angle-down" aria-hidden="true"></i>
+                                  <input type="text" id="datepicker"><i class="fa fa-angle-down" id="dateArr" aria-hidden="true"></i>
                                 </div>
                               </div>
                             </div>
@@ -255,18 +266,12 @@
                       </div>
                     </div>
                     <div class="tab-item clearfix">item</div>
-                    <!--.tab-item.clearfix-->
-                    <!--    | item-->
-                    <!--.tab-item.clearfix-->
-                    <!--    | photo-->
-                    <!--.tab-item.clearfix-->
-                    <!--    | item-->
-                    <!--.tab-item.clearfix-->
-                    <!--    | item-->
-                    <!--.tab-item.clearfix-->
-                    <!--    | item-->
-                    <!--.tab-item.clearfix-->
-                    <!--    | item-->
+                    <div class="tab-item clearfix">item</div>
+                    <div class="tab-item clearfix">photo</div>
+                    <div class="tab-item clearfix">item</div>
+                    <div class="tab-item clearfix">item</div>
+                    <div class="tab-item clearfix">item</div>
+                    <div class="tab-item clearfix">item</div>
                   </div>
                 </div>
                 <div class="tourdescription clearfix">
@@ -435,8 +440,8 @@
       <div id="btn-connect">кнопка связи</div>
       <div id="top"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
     </footer>
-    <!--script(src="libs/jquery/jquery-3.2.1.min.js")-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--script(src="libs/jquery/datepicker-ru.js")-->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>

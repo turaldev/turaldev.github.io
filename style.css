@@ -452,8 +452,16 @@ nav {
   .toggle-mnu.on span {
     background-color: transparent; }
   .toggle-mnu.on span:before {
+    -webkit-transform: rotate(45deg) translate(-1px, 0px);
+    -moz-transform: rotate(45deg) translate(-1px, 0px);
+    -ms-transform: rotate(45deg) translate(-1px, 0px);
+    -o-transform: rotate(45deg) translate(-1px, 0px);
     transform: rotate(45deg) translate(-1px, 0px); }
   .toggle-mnu.on span:after {
+    -webkit-transform: rotate(-45deg) translate(6px, -7px);
+    -moz-transform: rotate(-45deg) translate(6px, -7px);
+    -ms-transform: rotate(-45deg) translate(6px, -7px);
+    -o-transform: rotate(-45deg) translate(6px, -7px);
     transform: rotate(-45deg) translate(6px, -7px); }
 
 .proposeSlider {
@@ -1051,7 +1059,8 @@ aside {
   .reltours .item p {
     text-align: center;
     margin: 10px 0;
-    font-family: "informCTT", sans-serif; }
+    font-family: "informCTT", sans-serif;
+    font-size: 16px; }
   .reltours .item img {
     margin: 15px 0; }
 
@@ -1146,7 +1155,8 @@ aside {
   margin: 30px 0; }
   .articles h2 {
     text-align: center;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin: 25px 0; }
   .articles .art-item {
     display: none;
     margin: 10px 0 30px 0;
@@ -1205,41 +1215,82 @@ aside {
 
 #button-more {
   cursor: pointer;
-  width: 18%;
+  width: 210px;
+  height: 60px;
   margin: 0 auto;
   font-family: "Opem Sans", sans-serif;
-  font-size: 18px; }
+  font-size: 18px;
+  background: url("images/glob.png") 0 0 no-repeat;
+  position: relative; }
+  #button-more .arrL,
   #button-more .arrR {
-    position: relative; }
-    #button-more .arrR img {
-      float: left;
-      display: block; }
-    #button-more .arrR:before {
-      content: '';
-      width: 53px;
-      height: 33px;
-      background: url("images/arrR.png") 0 0 no-repeat;
-      position: absolute;
-      -webkit-animation: rotation 2s infinite linear; }
+    position: absolute; }
+  #button-more .arrR {
+    top: -6px;
+    left: -2px;
+    width: 60px;
+    height: 68px;
+    -webkit-animation: orbit2 4s linear infinite;
+    -moz-animation: orbit2 4s linear infinite;
+    -o-animation: orbit2 4s linear infinite;
+    animation: orbit2 4s linear infinite; }
 
-@-webkit-keyframes rotation {
+@-webkit-keyframes orbit2 {
   from {
-    -webkit-transform: rotate(0deg); }
+    transform: rotate(0deg) translateX(0) rotate(-360deg); }
   to {
-    -webkit-transform: rotate(359deg); } }
-    #button-more .arrR:after {
-      content: '';
-      width: 53px;
-      height: 33px;
-      background: url("images/arrL.png") 0 0 no-repeat;
-      position: absolute;
-      -webkit-animation: rotation 2s infinite linear; }
+    transform: rotate(360deg) translateX(0) rotate(0deg); } }
 
-@-webkit-keyframes rotation {
+@-moz-keyframes orbit2 {
   from {
-    -webkit-transform: rotate(0deg); }
+    transform: rotate(0deg) translateX(0) rotate(-360deg); }
   to {
-    -webkit-transform: rotate(359deg); } }
+    transform: rotate(360deg) translateX(0) rotate(0deg); } }
+
+@-o-keyframes orbit2 {
+  from {
+    transform: rotate(0deg) translateX(0) rotate(-360deg); }
+  to {
+    transform: rotate(360deg) translateX(0) rotate(0deg); } }
+
+@keyframes orbit2 {
+  from {
+    transform: rotate(0deg) translateX(0) rotate(-360deg); }
+  to {
+    transform: rotate(360deg) translateX(0) rotate(0deg); } }
+  #button-more .arrL {
+    bottom: 27px;
+    left: 0;
+    height: 3px;
+    width: 56px;
+    -webkit-animation: orbit2 4s linear infinite;
+    -moz-animation: orbit2 4s linear infinite;
+    -o-animation: orbit2 4s linear infinite;
+    animation: orbit2 4s linear infinite; }
+
+@-webkit-keyframes orbit2 {
+  from {
+    transform: rotate(-360deg) translateY(0) rotate(0deg); }
+  to {
+    transform: rotate(-360deg) translateY(0) rotate(360deg); } }
+
+@-moz-keyframes orbit2 {
+  from {
+    transform: rotate(-360deg) translateY(0) rotate(0deg); }
+  to {
+    transform: rotate(-360deg) translateY(0) rotate(360deg); } }
+
+@-o-keyframes orbit2 {
+  from {
+    transform: rotate(-360deg) translateY(0) rotate(0deg); }
+  to {
+    transform: rotate(-360deg) translateY(0) rotate(360deg); } }
+
+@keyframes orbit2 {
+  from {
+    transform: rotate(-360deg) translate(0) rotate(0deg); }
+  to {
+    transform: rotate(-360deg) translate(0) rotate(360deg); } }
   #button-more p {
     padding: 20px 0 0 0;
     float: right; }
@@ -1253,6 +1304,77 @@ aside {
     #cardTabs .tabs .spantabs {
       width: 92%;
       margin: 0 auto; }
+      #cardTabs .tabs .spantabs .hidespan {
+        height: 35px;
+        -webkit-box-shadow: 0 15px 8px -17px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0 15px 8px -17px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 15px 8px -17px rgba(0, 0, 0, 0.5); }
+        #cardTabs .tabs .spantabs .hidespan .sandBtm {
+          position: relative;
+          height: 35px;
+          width: 40px;
+          float: right;
+          margin-right: 10px; }
+        #cardTabs .tabs .spantabs .hidespan #sandwich {
+          width: 27px;
+          height: 15px;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto; }
+        #cardTabs .tabs .spantabs .hidespan .sw-topper {
+          position: relative;
+          top: 0;
+          width: 27px;
+          height: 2px;
+          background: #fa7b0a;
+          border: none;
+          border-radius: 4px 4px 4px 4px;
+          transition: transform 0.5s, top 0.2s; }
+        #cardTabs .tabs .spantabs .hidespan .sw-bottom {
+          position: relative;
+          width: 27px;
+          height: 2px;
+          top: 4px;
+          background: #fa7b0a;
+          border: none;
+          border-radius: 4px 4px 4px 4px;
+          transition: transform 0.5s, top 0.2s;
+          transition-delay: 0.2s, 0s; }
+        #cardTabs .tabs .spantabs .hidespan .sw-footer {
+          position: relative;
+          width: 27px;
+          height: 2px;
+          top: 8px;
+          background: #fa7b0a;
+          border: none;
+          border-radius: 4px 4px 4px 4px;
+          transition: all 0.5s;
+          transition-delay: 0.1s; }
+        #cardTabs .tabs .spantabs .hidespan #sandwich.active .sw-topper {
+          top: 10px;
+          -webkit-transform: rotate(140deg);
+          -moz-transform: rotate(140deg);
+          -ms-transform: rotate(140deg);
+          -o-transform: rotate(140deg);
+          transform: rotate(140deg); }
+        #cardTabs .tabs .spantabs .hidespan #sandwich.active .sw-bottom {
+          top: 5px;
+          -webkit-transform: rotate(-140deg);
+          -moz-transform: rotate(-140deg);
+          -ms-transform: rotate(-140deg);
+          -o-transform: rotate(-140deg);
+          transform: rotate(-140deg); }
+        #cardTabs .tabs .spantabs .hidespan #sandwich.active .sw-footer {
+          opacity: 0;
+          top: 0;
+          -webkit-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          transform: rotate(180deg); }
     #cardTabs .tabs .tab {
       display: block;
       float: left;
@@ -1309,14 +1431,19 @@ aside {
         #cardTabs .tab-item .info-items .item-info .infoCal {
           border: 1px solid #9a9a9a;
           border-radius: 7px;
-          width: 100%; }
+          width: 100%;
+          position: relative; }
           #cardTabs .tab-item .info-items .item-info .infoCal .fa {
-            color: #fa7b0a; }
+            color: #fa7b0a;
+            position: absolute;
+            top: 20%;
+            right: 7%;
+            cursor: pointer; }
           #cardTabs .tab-item .info-items .item-info .infoCal input[type="text"] {
             width: 90%;
             border: none;
             background: #e6e6e6;
-            padding: 2px 0;
+            padding: 2px 4px;
             margin: 0 0 0 3px; }
       #cardTabs .tab-item .info-items img {
         float: left;
@@ -1391,6 +1518,24 @@ aside {
 
 #cardslider {
   margin: 30px 0; }
+  #cardslider .item:hover {
+    border-bottom: 2px solid #fa7b0a; }
+  #cardslider .item img {
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+    z-index: 1; }
+    #cardslider .item img:hover {
+      z-index: 2;
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9); }
   #cardslider .owl-nav div {
     width: 25px;
     height: 35px;
@@ -1743,6 +1888,22 @@ footer {
   #cardTabs .tabs .tab.active a,
   #cardTabs .tabs .tab:hover a {
     font-size: 12px; }
+  #cardTabs .tabs .tab {
+    float: none;
+    text-align: left;
+    border-bottom: 1px solid #ccc; }
+    #cardTabs .tabs .tab.active:after, #cardTabs .tabs .tab:hover:after {
+      content: '';
+      position: absolute;
+      border: 8px solid transparent;
+      border-left: 10px solid #fa7b0a !important;
+      left: 0;
+      margin-left: -8px;
+      top: 35%;
+      width: 0; }
+  #cardTabs .tabs .spantabs .openspan {
+    display: none;
+    padding: 0 25px; }
   .footer-social,
   .footer-copy {
     text-align: center; }
@@ -1774,18 +1935,6 @@ footer {
     width: 100%; }
   .mainNews .mainNewsTabs .tab-item .item .short-text a {
     top: 93%; }
-  #cardTabs .tabs .tab {
-    float: none;
-    text-align: left; }
-    #cardTabs .tabs .tab.active:after, #cardTabs .tabs .tab:hover:after {
-      content: '';
-      position: absolute;
-      border: 8px solid transparent;
-      border-left: 10px solid #fa7b0a !important;
-      left: 0;
-      margin-left: -8px;
-      top: 35%;
-      width: 0; }
   .subfooter .sub-form {
     margin: 40% auto;
     width: 60%; }
